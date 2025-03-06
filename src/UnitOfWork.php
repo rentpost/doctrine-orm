@@ -2874,9 +2874,9 @@ class UnitOfWork implements PropertyChangedListener
      */
     public function getEntityPersister(string $entityName): EntityPersister
     {
-        if (isset($this->persisters[$entityName])) {
-            return $this->persisters[$entityName];
-        }
+        // if (isset($this->persisters[$entityName])) {
+        //     return $this->persisters[$entityName];
+        // }
 
         $class = $this->em->getClassMetadata($entityName);
 
